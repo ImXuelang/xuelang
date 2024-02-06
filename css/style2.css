@@ -6,9 +6,11 @@ github：https://github.com/xiandus/search
                      XianDu，2020.1.6
 */
 
-input::-webkit-input-placeholder {
-    color: white;
+input::-webkit-input-placeholder{
+color:white;
 }
+
+/*@import url(//fonts.loli.net/earlyaccess/notosansscsliced.css);*/
 
 * {
     padding: 0;
@@ -24,18 +26,25 @@ body {
     position: relative;
     overflow: hidden;
 }
-
-.bgo {
+.bgo{
     background-color: #1685a9;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
-    background-attachment: fixed;
-    -moz-background-size: cover;
+    width:100%;
+    height:100%;
+	background-image: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
+    /*
+    https://ae01.alicdn.com/kf/H60e9661f4cda429b87af46e40ea080149.png
+    https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302
+    http://www.5ai.pp.ua/api/bizhi.php
+    https://source.unsplash.com/1920x1080/?nature,water
+    https://api.dujin.org/bing/1920.php
+    https://api.ixiaowai.cn/gqapi/gqapi.php
+    https://api.ixiaowai.cn/api/api.php*/
+    background-attachment:fixed;
+    -moz-background-size: cover;    /*背景图片拉伸以铺满全屏*/
     -ms-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: center ;
     z-index: 1;
 }
 
@@ -45,7 +54,7 @@ html {
     color: #fff;
 }
 
-form,
+/*form,
 input,
 button {
     padding: 0;
@@ -54,17 +63,17 @@ button {
     outline: none;
     background: none;
 }
-
 input::-webkit-input-placeholder {
     color: #ccc;
     letter-spacing: 2px;
     font-size: 16px;
-}
+}*/
 
 ul,
 li {
     display: block;
     list-style: none;
+    
 }
 
 a {
@@ -92,7 +101,7 @@ a {
     width: 25px;
     height: 3px;
     background: #ddd;
-    border-radius: 25px;
+    border-radius:25px;
 }
 
 #menu i:before {
@@ -103,7 +112,7 @@ a {
     background: #ddd;
     position: absolute;
     right: 0;
-    border-radius: 25px;
+    border-radius:25px;
 }
 
 #menu i:after {
@@ -114,14 +123,14 @@ a {
     background: #ddd;
     position: absolute;
     left: 0;
-    border-radius: 25px;
+    border-radius:25px;
 }
 
 #menu.on {
     right: 380px;
-    background: rgba(1, 1, 1, 0.5);
+    background: rgba(1,1,1,0.5);
     border-radius: 25px;
-    box-shadow: 0 6px 8px rgba(36, 159, 253, .3);
+   /* box-shadow: 0 6px 8px rgba(36, 159, 253, .3);*/
 }
 
 #menu.on i {
@@ -156,10 +165,9 @@ a {
     position: absolute;
     right: 0px;
     z-index: 2000;
-    background: rgba(1, 1, 1, 0.7);
+    background: rgba(1,1,1,0.7);
     transition: 0.3s all linear;
 }
-
 .list.closed {
     right: -380px;
 }
@@ -188,7 +196,7 @@ a {
     display: block;
     color: #fff;
     font-weight: 500;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0,0,0,0.3);
     text-align: left;
     font-size: 12px;
 }
@@ -221,7 +229,7 @@ a {
     margin: 30px 0 0;
     text-align: left;
     text-indent: 10px;
-    border-bottom: 1px dashed #dedede;
+    /*border-bottom: 1px dashed #dedede;*/
     color: #fff;
     font-size: 18px;
     font-weight: bold;
@@ -233,7 +241,7 @@ a {
     font-weight: normal;
 }
 
-.logo {
+.logo{
     position: absolute;
     z-index: 99;
     top: 90%;
@@ -249,6 +257,48 @@ a {
     left: 15px;
     top: 15px;
     font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media (max-width: 640px) {
+    .list {
+        width: 227px;
+    }
+    .list ul {
+        width: 220px;
+    }
+    #menu {
+        top: 5px;
+    }
+      #menu.on {
+        right: 270px;
+    }
+.bgo{
+    	background-image: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
+        /*http://xzhuye.is-best.net/api/sjbizhi.php*/
+        /*https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302&device=mobile*/
+        background-size: cover;
+    }
+.logo{
+width: 35%;
+}
+.ko{
+	height: 158px;
+	overflow-y: scroll;
+}
+}
+.ssln:hover{
+            background: #f2f2f2;
+        }
+.mywth {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 10px;
     height: 20px;
     line-height: 20px;
     cursor: pointer;
