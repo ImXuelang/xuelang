@@ -27,24 +27,11 @@ body {
     overflow: hidden;
 }
 .bgo{
-    background-color: #1685a9;
-    width:100%;
-    height:100%;
-	background-image: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
-    /*
-    https://ae01.alicdn.com/kf/H60e9661f4cda429b87af46e40ea080149.png
-    https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302
-    http://www.5ai.pp.ua/api/bizhi.php
-    https://source.unsplash.com/1920x1080/?nature,water
-    https://api.dujin.org/bing/1920.php
-    https://api.ixiaowai.cn/gqapi/gqapi.php
-    https://api.ixiaowai.cn/api/api.php*/
-    background-attachment:fixed;
-    -moz-background-size: cover;    /*背景图片拉伸以铺满全屏*/
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
+	background: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
     background-size: cover;
-    background-position: center ;
+    filter: brightness(0.9);
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -240,29 +227,15 @@ a {
     margin-right: 5px;
     font-weight: normal;
 }
-
 .logo{
     position: absolute;
     z-index: 99;
-    top: 90%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
+    width: 200px;
     opacity: 0.9;
 }
-
-.mywth {
-    width: 150px;
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    font-size: 12px;
-    height: 20px;
-    line-height: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
 @media (max-width: 640px) {
     .list {
         width: 227px;
@@ -277,9 +250,7 @@ a {
         right: 270px;
     }
 .bgo{
-    	background-image: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
-        /*http://xzhuye.is-best.net/api/sjbizhi.php*/
-        /*https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302&device=mobile*/
+    	background: url(https://cdn.jsdelivr.net/gh/ImXuelang/xuelang/img/bc2.jpg);
         background-size: cover;
     }
 .logo{
@@ -293,14 +264,3 @@ width: 35%;
 .ssln:hover{
             background: #f2f2f2;
         }
-.mywth {
-    width: 100px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    font-size: 10px;
-    height: 20px;
-    line-height: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
